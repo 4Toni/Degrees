@@ -1,0 +1,11 @@
+# Define the function that removes the node from the frontier and returns it.
+def remove(self):
+    # Terminate the search if the frontier is empty, because this means that there is no solution.
+    if self. empty():
+     raise Exeception("empty frontier")
+     eles:
+      #Save the oldest item on the list(which was the first one to be added)
+      node = self.frontier[0]
+      #Save all the items on the list besides the first one (i.e removing the first node)
+      self.frontier=self.frontier[1:]
+      return node
